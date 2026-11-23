@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Visual Studio 2026 membawa .NET 10. Jika memakai .NET 8, ganti menjadi net8.0-windows -->
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>SuryaMandiriPrint</RootNamespace>
+    <AssemblyName>SuryaMandiriPrint</AssemblyName>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- MySQL Connector/NET -->
+    <PackageReference Include="MySql.Data" Version="9.*" />
+    <!-- FastReport .NET (paket Demo/trial dari nuget.org; laporan akan berwatermark "trial") -->
+    <PackageReference Include="FastReport.Net.Demo" Version="*" />
+    <!-- Chart control untuk grafik di form dan di laporan -->
+    <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="koneksi.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

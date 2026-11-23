@@ -1,0 +1,8 @@
+{
+  "Server": "localhost",
+  "Port": 3306,
+  "Database": "db_percetakan",
+  "User": "sm_app",
+  "Password": "SuryaMandiri#2026",
+  "FolderFile": "C:\\SuryaMandiri\\FilePesanan"
+}
